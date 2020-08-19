@@ -5,7 +5,12 @@ var jumpB = document.getElementById('jump');
 jumpB.addEventListener("mouseover", function() {
   this.innerHTML = ("ME");
   var rdm = (Math.floor(Math.random() * 100)) + 1;
-  this.style.marginLeft = rdm + "em";
+  var minusPlus = (Math.floor(Math.random() * 2) + 1);
+  if (minusPlus == 1) {
+    this.style.marginLeft = rdm + "em";
+  } else {
+    this.style.marginLeft = -rdm + "em";
+  }
   document.getElementById("hidden").setAttribute("class", "visible");
 });
 jumpB.addEventListener("click", function() {
@@ -24,7 +29,7 @@ jumpB.addEventListener("click", function() {
   ];
    phrase = getRandomArrayEntry(PHRASES);
     window.speechSynthesis.speak(new window.SpeechSynthesisUtterance(phrase));
-    
+
 // function blockBackButton () {
 //   window.addEventListener('popstate', () => {
 //     window.history.forward()
