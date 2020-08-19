@@ -60,7 +60,7 @@ body {
 a {
   color: #11999E;
   font-family: 'Merienda', cursive;
-  margin: 10px 0 10px 20px;
+  margin: 10px 20px 10px 20px;
   text-decoration: none;
 }
 
@@ -144,4 +144,34 @@ padding: 20px 0;
   background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
   background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
   text-decoration: none;
+}
+
+/* Trools here */
+
+.btn-b {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Merienda', cursive;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  text-align: left;
+
+
+}
+
+.visible {
+  visibility: visible;
+}
+
+.hidden {
+visibility: hidden;
 }
